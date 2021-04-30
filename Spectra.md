@@ -33,7 +33,7 @@ user: user (db)
 main
 wp
 testing 
-index-of*
+index-of
 files 
 wp-admin/                                          
 wp-content/                                       

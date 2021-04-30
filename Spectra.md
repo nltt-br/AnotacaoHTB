@@ -22,7 +22,7 @@ wpscan --url http://spectra.htb/main --passwords ~/Downloads/rockyou.txt --usern
 wfuzz -c -z file,/opt/node-dirbuster/lists/directory-list-2.3-medium.txt --hc 404 http://spectra.htb/FUZZ
 ```
 user : user (wp)
-devtest: devteam01 (db)
+user: user (db)
 
 
 ### dir
@@ -64,8 +64,8 @@ failed access
 **PORT 3306** 
 
 
-reverse shell - https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
-http://spectra.htb/main/wp-content/themes/twentyseventeen/404.php
+1. reverse shell - https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+2. http://spectra.htb/main/wp-content/themes/twentyseventeen/404.php
 
 
 > connect with user no db, failed 

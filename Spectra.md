@@ -29,10 +29,8 @@ user: user (db)
 
 > main
 *wp*
-
 > testing 
 *index-of*
-
 > files 
 wp-admin/                                          
 wp-content/                                       
@@ -58,7 +56,7 @@ xmlrpc.php
 
 **PORT 22** 
 
-failed access 
+failed access with users
 
 
 **PORT 3306** 
@@ -79,7 +77,7 @@ katie:x:20156:20157::/home/katie:/bin/bash
 
 
 
-cat /etc/issue
+> cat /etc/issue
 ```
 Developer Console
 To return to the browser, press:

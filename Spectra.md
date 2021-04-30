@@ -72,17 +72,6 @@ https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-rev
 http://spectra.htb/main/wp-content/themes/twentyseventeen/404.php
 ```
 
-
-
-```
-root:x:0:0:root:/root:/bin/bash
-chronos:x:1000:1000:system_user:/home/chronos/user:/bin/bash
-nginx:x:20155:20156::/hostsme/nginx:/bin/bash
-katie:x:20156:20157::/home/katie:/bin/bash
-```
-
-
-
 > cat /etc/issue
 ```
 Developer Console

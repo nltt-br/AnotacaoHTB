@@ -29,12 +29,12 @@ user: user (db)
 ```
 
 ### dir
-
-> main
->> wp
-> testing 
->> index-of*
-> files 
+```
+main
+wp
+testing 
+index-of*
+files 
 wp-admin/                                          
 wp-content/                                       
 wp-includes/                                       
@@ -55,7 +55,7 @@ wp-settings.php
 wp-signup.php                                    
 wp-trackback.php                                   
 xmlrpc.php 
-
+```
 
 **PORT 22** 
 

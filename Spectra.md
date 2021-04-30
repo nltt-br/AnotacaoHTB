@@ -64,17 +64,20 @@ xmlrpc.php
 
 **PORT 3306** 
 
-
-1. reverse shell - https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
-2. http://spectra.htb/main/wp-content/themes/twentyseventeen/404.php
-
-
 > connect with user no db, failed 
+
+
+``` 
+https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+http://spectra.htb/main/wp-content/themes/twentyseventeen/404.php
+```
+
+
 
 ```
 root:x:0:0:root:/root:/bin/bash
 chronos:x:1000:1000:system_user:/home/chronos/user:/bin/bash
-nginx:x:20155:20156::/home/nginx:/bin/bash
+nginx:x:20155:20156::/hostsme/nginx:/bin/bash
 katie:x:20156:20157::/home/katie:/bin/bash
 ```
 

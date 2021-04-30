@@ -31,9 +31,9 @@ user: user (db)
 ### dir
 
 > main
-*wp*
+>> wp
 > testing 
-*index-of*
+>> index-of*
 > files 
 wp-admin/                                          
 wp-content/                                       

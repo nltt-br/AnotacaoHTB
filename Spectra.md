@@ -117,8 +117,9 @@ cat /etc/autologin/passwd
 
 1. user:user
 2. grupos? 
+	1. developer
 3. sudo?
-4. NOPASSWD(initctl)
+	1. NOPASSWD(initctl)
 
 ```bash
 sudo -u root /sbin/initctl list

